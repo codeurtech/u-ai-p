@@ -14,9 +14,9 @@ This project exposes a REST API endpoint (`/chat`) that leverages Spring Boot an
 ## Endpoint: `/chat`
 
 *   **Method:** `POST`
-*   **Request Body (PLAINTEXT):**  Accepts a PlainText payload with the following fields:
+*   **Request Body (PLAINTEXT):**  Accepts PlainText content with the following fields:
     *   The user's input text for the chatbot.
-*   **Response Body (PLAINTEXT):** Returns a PlainText containing:
+*   **Response Body (PLAINTEXT):** Returns a PlainText content containing:
     *   The generated text response from the Gemma model.
 
 **Example Request:**

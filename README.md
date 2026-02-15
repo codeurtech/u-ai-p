@@ -14,13 +14,10 @@ This project exposes a REST API endpoint (`/chat`) that leverages Spring Boot an
 ## Endpoint: `/chat`
 
 *   **Method:** `POST`
-*   **Request Body (JSON):**  Accepts a JSON payload with the following fields:
-    *   `prompt`: (String, Required) The user's input text for the chatbot.
-    *   `temperature`: (Number, Optional) Controls the randomness of responses.  Higher values (e.g., 0.7 - 1) lead to more diverse and creative outputs, while lower values (e.g., 0.2 - 0.5) result in more predictable and focused responses. Defaults to 0.7.
-    *   `max_tokens`: (Number, Optional) Limits the length of the generated response in tokens. Defaults to 250.
-*   **Response Body (JSON):** Returns a JSON object containing:
-    *   `response`: (String) The generated text response from the Gemma model.
-    *   `model_version`: (String) The version of Google Gemma used.
+*   **Request Body (PLAINTEXT):**  Accepts a PlainText payload with the following fields:
+    *   The user's input text for the chatbot.
+*   **Response Body (PLAINTEXT):** Returns a PlainText object containing:
+    *   The generated text response from the Gemma model.
 
 **Example Request:**
 

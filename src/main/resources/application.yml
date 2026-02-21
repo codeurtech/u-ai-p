@@ -5,6 +5,6 @@ spring:
       api-key: "dummy"
       chat:
         options:
-          model: google/gemma-3-4b
+          model: microsoft/phi-4
           temperature: 0.7
           stream-usage: true

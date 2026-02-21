@@ -8,3 +8,15 @@ spring:
           model: microsoft/phi-4
           temperature: 0.7
           stream-usage: true
+
+  mail:
+    host: smtp.example.com
+    port: 587
+    username: your-username
+    password: ${MAIL_PASSWORD:your-password}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
